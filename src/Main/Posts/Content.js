@@ -6,7 +6,9 @@ export default function Content(props) {
       <img
         src={props.postimg}
         onClick={() => {
-          return props.state(!props.like);
+          if (props.like === false) {
+            return props.state(!props.like);
+          }
         }}
       />
     </div>
