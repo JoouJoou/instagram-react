@@ -5,7 +5,7 @@ export default function Content(props) {
     <div class="conteudo">
       <img
         src={props.postimg}
-        onClick={() => {
+        onDoubleClick={() => {
           if (props.like === false) {
             return props.state(!props.like);
           }
